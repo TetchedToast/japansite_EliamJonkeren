@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbuttons {
+    display:  inline-block;
+    background-color: rgb(101, 101, 141);
+    padding: 20px;
+    margin: 0px, 20px;
+    width: 250px;
+}
+h1 {
+    text-align: center;
+    font-size: 7em;
+    padding: 30px;
+    background-color: lightblue;
+}
+
+hr {
+    margin-top: 20px;
+}
+
+body {
+    background-color: lightgray;
+    color: rgb(70, 70, 70);
+    margin-right: 20%;
+    margin-left: 20%;
+    
+}
+
+.filler {
+    padding-bottom: 1500px;
+    background-color: pink;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin-right: 2em;
+    list-style: none;
+}
+
+#index-image {
+    height: 500px;
+}
+
+#interactivemap {
+    width: 60vw;
+    
+}
