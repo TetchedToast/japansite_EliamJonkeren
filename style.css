@@ -14,26 +14,82 @@
     src: url(fonts/OpenDyslexicMono-Regular.otf);
 }
 
-.navbuttons {
+/*body*/
+body {
+    color: #F8E9DA;    
+    background-color: #F9CEC2;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/*header*/
+header {
+    background-color: #55527C;
+}
+
+/*main*/
+main {
+    background-color: #DDCEC4;
+}
+
+main ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+main li a{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #B89081;
+    padding: 20vh 10vw;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 15em;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+main img {
+    height: 300px;
+}
+
+/*footer*/
+footer {
+    background-color: #55527C;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 1%;
+    margin-top: 0;
+    list-style: none;
+}
+
+nav a{
     display:  flex;
     justify-content: space-evenly;
-    background-color: rgb(101, 101, 141);
+    background-color: #B89081;
     padding: 20px;
     width: 15em;
     color: white;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
 }
+
 
 h1 {
     text-align: center;
     font-size: 7em;
-    padding: 30px;
+    padding: 0px;
     font-family: Ramen;
-}
-
-hr {
-    margin-top: 20px;
 }
 
 p {
@@ -41,48 +97,89 @@ p {
     
 }
 
-body {
-    
-    color: rgb(70, 70, 70);    
+/*tagspecifics*/
 
-    background-image: url(img/IMG_2295.JPG);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    
-}
-
-header {
-    background-color: rgba(0, 255, 255, 0.602);
-}
-
-main {
-    background-color: rgba(137, 215, 215, 0.662);
-}
-
-footer {
-    background-color: rgba(255, 0, 149, 0.602);
-}
-
-ul {
-    display: flex;
-    justify-content: center;
-}
-
-li {
-    margin: 1%;
-    list-style: none;
-}
-
-#index-image {
-    height: 500px;
-}
-
-#interactivemap {
-    width: 20vw;
-    
-}
 .layout {
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
 }
+
+.block-1 {
+    display: flex;
+    font-size: 1.2vw;
+    color: #55527C;
+    padding: 2%;
+}
+
+.block-1 p {
+    padding-right: 2%;
+}
+
+.banners {
+    height: 600px;
+    background-color: #DDCEC4;
+}
+
+#index-image {
+    height: 40vh;
+    width: 50vw;
+}
+
+
+/*
+link,
+visited,
+a:hover,
+active,
+a:focus,
+transition: all 250-ms ease;
+transform: translateY(-0.5em);
+*/
+
+nav a:hover {
+    background-color: black;
+}
+
+nav a:active {
+    background-color: blue;
+}
+
+/*tipspage*/
+
+.tippanes {
+    display: flex;
+    justify-content: space-around;
+    background-color: blue;
+    flex-wrap: wrap;
+
+}
+
+.tippanes article {
+    padding: 20%;
+    margin: 2%;
+    background-color: red;
+    
+}
+.mapdiv {
+    width: 47.6%;
+    margin: auto;
+    fill: #ffffff00;
+    stroke: #231f20;
+    stroke-miterlimit: 10;
+
+}
+#japan {
+    fill: #55527C;
+}
+
+#nagoya, #tokyo_1, #tokyo_2, #osaka, #kyoto, #nara, #kanazawa, #hakuba_nagano {
+    fill: #B89081;
+    stroke-width: 0.5%;
+    
+}
+
+#nagoya:hover, #tokyo_1:hover, #tokyo_2:hover, #osaka:hover, #kyoto:hover, #nara:hover, #kanazawa:hover, #hakuba_nagano:hover {
+    fill: rgb(65, 64, 64);
+}
+ 
