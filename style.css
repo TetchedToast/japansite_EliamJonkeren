@@ -52,13 +52,27 @@ main li a{
     border-radius: 10px;
 }
 
+h1 {
+    text-align: center;
+    font-size: 7em;
+    padding: 0px;
+    font-family: Ramen;
+}
+
+
+img {
+    border-radius: 3%;
+}
+
 main img {
     height: 300px;
 }
 
 /*footer*/
 footer {
+    display: flex;
     background-color: #55527C;
+    justify-content: center;
 }
 
 nav ul {
@@ -70,7 +84,6 @@ nav li {
     margin: 1%;
     margin-top: 0;
     list-style: none;
-    
 }
 
 nav a{
@@ -85,25 +98,39 @@ nav a{
     border-radius: 5px;
 }
 
-
-h1 {
-    text-align: center;
-    font-size: 7em;
-    padding: 0px;
-    font-family: Ramen;
+nav a:hover {
+    background-color: black;
 }
+
+nav a:active {
+    background-color: blue;
+}
+
+
+---------------------------------------
+
+nav a:focus {
+    background-color: white;
+}
+
+---------------------------------------
+
 
 p {
     font-family: Dyslexyei;
-    
 }
 
-/*tagspecifics*/
+/*tagspecifics NEED TO CLEAN UP*/
 
 .layout {
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
+}
+
+.block-1 img {
+    height: 40vh;
+    width: 50vw;
 }
 
 .block-1 {
@@ -137,29 +164,6 @@ p {
     background-color: #DDCEC4;
 }
 
-#index-image {
-    height: 40vh;
-    width: 50vw;
-}
-
-
-/*
-link,
-visited,
-a:hover,
-active,
-a:focus,
-transition: all 250-ms ease;
-transform: translateY(-0.5em);
-*/
-
-nav a:hover {
-    background-color: black;
-}
-
-nav a:active {
-    background-color: blue;
-}
 
 /*tipspage*/
 
@@ -168,26 +172,28 @@ nav a:active {
     justify-content: space-around;
     background-color: #55527C;
     flex-wrap: wrap;
-
 }
 
 .tippanes article {
     padding: 1%;
-    margin: 2%;
+    margin: 2% 20%;
     background-color: #B89081;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     
 }
+
+/*interactive map*/
+
 .mapdiv {
     width: 47.6%;
     margin: auto;
     fill: #ffffff00;
     stroke: #231f20;
     stroke-miterlimit: 10;
-
 }
+
 #japan {
     fill: #55527C;
 }
@@ -195,7 +201,6 @@ nav a:active {
 #nagoya, #tokyo_1, #tokyo_2, #osaka, #kyoto, #nara, #kanazawa, #hakuba_nagano {
     fill: #B89081;
     stroke-width: 0.5%;
-    
 }
 
 #nagoya:hover, #tokyo_1:hover, #tokyo_2:hover, #osaka:hover, #kyoto:hover, #nara:hover, #kanazawa:hover, #hakuba_nagano:hover {
